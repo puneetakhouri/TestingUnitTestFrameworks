@@ -1,10 +1,7 @@
 package com.puneet.endpoints.test;
 
-import com.puneet.endpoints.IEmployee;
 import com.puneet.modals.Employee;
 import org.junit.Test;
-import org.mockito.Mock;
-import org.mockito.Mockito;
 
 import static org.junit.Assert.assertEquals;
 
