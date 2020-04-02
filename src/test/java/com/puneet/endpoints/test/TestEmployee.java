@@ -23,7 +23,6 @@ public class TestEmployee {
 
         final Employee emp = new Employee("abc", 234, 546);
         service.set(emp);
-
         assertEquals(emp, service.get());
     }
 }
