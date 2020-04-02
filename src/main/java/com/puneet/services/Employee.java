@@ -23,6 +23,7 @@ public class Employee implements IEmployee<com.puneet.modals.Employee> {
 
     @Override
     public void set(com.puneet.modals.Employee employee) {
+        
         com.puneet.dao.IEmployee employeeDao = com.puneet.dao.Employee.getInstance();
         employeeDao.set(translate(employee));
     }
