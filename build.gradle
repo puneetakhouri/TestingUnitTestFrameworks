@@ -12,6 +12,12 @@ repositories {
     jcenter()
 }
 
+test {
+    afterTest { desc, result ->
+        logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+    }
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     //testImplementation 'org.mockito:mockito-core:2.7.22'
